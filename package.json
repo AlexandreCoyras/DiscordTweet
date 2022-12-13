@@ -1,0 +1,26 @@
+{
+  "name": "discordtweet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexandreCoyras/DiscordTweet.git"
+  },
+  "keywords": [],
+  "author": "",
+  "bugs": {
+  "license": "ISC",
+    "url": "https://github.com/AlexandreCoyras/DiscordTweet/issues"
+  },
+  "homepage": "https://github.com/AlexandreCoyras/DiscordTweet#readme",
+  "dependencies": {
+    "axios": "^1.2.1",
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3"
+  }
+}
