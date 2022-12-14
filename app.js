@@ -32,7 +32,7 @@ const updateTwitter = () => {
                         client.channels.cache.get("844986176011632643").send("<@&1052353187430019102>")
                     })
             })
-            setTimeout(updateTwitter, 1000)
+            setTimeout(updateTwitter, 7000)
         })
 }
 
