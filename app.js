@@ -39,7 +39,7 @@ client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
     axios.get("https://api.twitter.com/2/users/1111277747161178114/tweets")
         .then((res) => {
-            // res.data.data.forEach((tw) => tweets.push(tw.id))
+            res.data.data.forEach((tw) => tweets.push(tw.id))
             updateTwitter()
         })
 });
