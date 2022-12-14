@@ -9,7 +9,6 @@ const client = new Client({ intents: [
         GatewayIntentBits.GuildIntegrations]
         });
 
-let uberId = "1111277747161178114"
 axios.defaults.headers.common = {'Authorization': `bearer ${process.env.BEARER}`}
 let tweets = []
 
@@ -28,7 +27,10 @@ const updateTwitter = () => {
                     return !charToExclude.some((chara) => word.indexOf(chara) !== -1);
                 })
                 if (codes.length >= 1)
-                    codes.forEach((code) => client.channels.cache.get("844986176011632643").send(`${code} <@258994961754619905>`))
+                    codes.forEach((code) => {
+                        client.channels.cache.get("844986176011632643").send(`${code}`)
+                        client.channels.cache.get("844986176011632643").send("<@258994961754619905>")
+                    })
             })
             setTimeout(updateTwitter, 1000)
         })
