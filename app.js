@@ -22,7 +22,6 @@ const updateTwitter = () => {
             res.data.data.forEach((tweet) => {
                 if (tweets.includes(tweet.id)) return
                 tweets.push(tweet.id)
-                if (tweets.length > 10) tweets.shift()
                 let charToExclude = ["#", "'", "@", "’", ":", "é"]
                 let codes = tweet.text.split(/[\s,]+/).filter((word) => {
                     if (!word.toLocaleLowerCase().includes("lacompo")) return false
