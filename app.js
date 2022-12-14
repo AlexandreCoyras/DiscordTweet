@@ -29,7 +29,7 @@ const updateTwitter = () => {
                 if (codes.length >= 1)
                     codes.forEach((code) => {
                         client.channels.cache.get("844986176011632643").send(`${code}`)
-                        client.channels.cache.get("844986176011632643").send("<@258994961754619905>")
+                        client.channels.cache.get("844986176011632643").send("<@&1052353187430019102>")
                     })
             })
             setTimeout(updateTwitter, 1000)
